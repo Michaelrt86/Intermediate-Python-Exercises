@@ -7,6 +7,5 @@ for item in range(0, counter):
     userChoice = float(input())
     intList.append(userChoice)
     average += userChoice
-
 print('List:',intList)
-print ('Average:',average / counter)
+print ('The',average / counter)
