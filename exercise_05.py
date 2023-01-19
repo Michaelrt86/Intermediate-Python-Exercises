@@ -25,8 +25,9 @@ for x in range(0,5):
         if firstList[x] == secondList[y]:
             thirdList.append(firstList[x])
             break
+print (thirdList)
 #CHECKING FOR DUPLICATES IN THIRDLIST AND REMOVING IF FOUND
-for z in range(0,len(thirdList)-1):
+for z in range(0,len(thirdList)):
     if thirdList.count(thirdList[z]) > 1:
         thirdList.remove(thirdList[z])
 print(thirdList)
