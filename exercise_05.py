@@ -1,25 +1,32 @@
-#firstList = []
-firstList = [1,2,3,4,5]
-#secondList = []
-secondList = [6,7,8,9,1]
+firstList = []
+#firstList = [1,2,1,4,7]
+secondList = []
+#secondList = [6,7,8,9,1]
 thirdList = []
 
-"""""
+
+#CREATION OF THE ARRAYS
+#"""""
 for x in range(10):
     if x < 5:
-        print('please enter a number for the first list',x + 1,end= " ")
+        print('please enter a number for the first list', end= " ")
         firstList.append(int(input()))
     else:
-        print('please enter a number for the second list',x + 1,end= " ")
+        print('please enter a number for the second list', end= " ")
         secondList.append(int(input()))
 print (firstList)
 print (secondList)
-"""""
-thirdList.extend(firstList)
-thirdList.extend(secondList)
+#"""""
 
-for x in range(0,len(thirdList)):
-    for y in range(0, len(thirdList)):
-        if thirdList[x] == thirdList[y]:
-            thirdList.pop(y)
+#LOOPING SECTION CHECKING FOR PAIRS BETWEEN BOTH LISTS THEN ADDING THEM TO THE THIRDLIST
+size = len(thirdList)
+for x in range(0,5):
+    for y in range(0, 5):
+        if firstList[x] == secondList[y]:
+            thirdList.append(firstList[x])
+            break
+#CHECKING FOR DUPLICATES IN THIRDLIST AND REMOVING IF FOUND
+for z in range(0,len(thirdList)-1):
+    if thirdList.count(thirdList[z]) > 1:
+        thirdList.remove(thirdList[z])
 print(thirdList)
