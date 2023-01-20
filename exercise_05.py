@@ -3,9 +3,9 @@
 # Create a third array containing the common values from both arrays without duplicates. Print out all three lists.
 
 firstList = []
-#firstList = [1,2,1,4,7]
+#firstList = [1,2,3,4,5]
 secondList = []
-#secondList = [6,7,8,9,1]
+#secondList = [5,7,8,9,2]
 thirdList = []
 
 
@@ -23,7 +23,6 @@ print (secondList)
 #"""""
 
 #LOOPING SECTION CHECKING FOR PAIRS BETWEEN BOTH LISTS THEN ADDING THEM TO THE THIRDLIST
-size = len(thirdList)
 for x in range(0,5):
     for y in range(0, 5):
         if firstList[x] == secondList[y]:
@@ -35,8 +34,9 @@ z = 0
 while z < len(thirdList):
     if thirdList.count(thirdList[z]) > 1:
         thirdList.remove(thirdList[z])
-        z = z + 1
+        #z = z + 1
     if z == len(thirdList) - 1:
-        break    
+        break
+    z = z + 1
 #"""""
 print(thirdList)
