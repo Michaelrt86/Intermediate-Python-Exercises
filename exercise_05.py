@@ -1,3 +1,7 @@
+#Exercise 05
+#Take in 5 integers from the user and store them in a list. Then take in another 5 integers and store them in a separate list. 
+# Create a third array containing the common values from both arrays without duplicates. Print out all three lists.
+
 firstList = []
 #firstList = [1,2,1,4,7]
 secondList = []

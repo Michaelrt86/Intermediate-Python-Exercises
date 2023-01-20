@@ -1,3 +1,6 @@
+#Exercise 03
+#Take in an integer greater than 1. Print out the cubes of each integer from 0 to the inputted integer.
+
 print('Enter an integer greater than 1: ', end= " ")
 userInput = int(input())
 if userInput > 1:
