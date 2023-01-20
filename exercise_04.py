@@ -11,5 +11,5 @@ for item in range(0, counter):
     userChoice = float(input())
     intList.append(userChoice)
     average += userChoice
-print('List:',intList)
-print ('The',average / counter)
+print('List:' + intList)
+print ('Mean: ' + average / counter)
