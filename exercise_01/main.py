@@ -1,0 +1,3 @@
+import BankAccount
+
+myAccount = BankAccount()
